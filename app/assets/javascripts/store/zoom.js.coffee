@@ -48,4 +48,7 @@ $ ->
   ($ '#product-variants input[type="radio"], #product-variants label').click (event) ->
     show_variant_images @value
     update_variant_price ($ this)
+  ($ '#product-variants select').change (event) ->
+    show_variant_images @value
+    update_variant_price ($ this)
   ($ '.fancybox').fancybox()
